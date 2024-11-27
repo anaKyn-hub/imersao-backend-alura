@@ -39,6 +39,8 @@ const posts = [
 //Inicializa o Express
 const app = express();
 
+app.use(express.static("uploads"));
+
 routes(app);
 
 //Inicia o app (servidor do express) na porta 3000 (servidor local) e deixa ele ouvindo/atento a algum pedido 
